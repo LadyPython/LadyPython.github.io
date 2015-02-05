@@ -1,0 +1,73 @@
+doctype
+html
+	head
+		//-Указание кодировки
+		meta( charset="utf-8" )
+		meta( name="description" content="Семенова-Звенигородская София. Личный сайт LadyPython.com" )
+		meta( name="author" content="Семенова-Звенигородская София" )
+		meta( name = "keywords" content="LadyPython,Семенова-Звенигородская София,HTML5,CSS3,Робототехника,Python" )
+		
+		link( rel="shortcut icon" href="/favicon.ico" )
+		link( rel="stylesheet" href="../css/reset.css" type="text/css" media="all" )
+		link( rel="stylesheet" href="../css/mainstyle.css" type="text/css" media="all" )
+		
+		//-Правильное отображение во всех браузерах
+		script( src="../js/prefixfree.min.js" )
+		script( src="../js/modernizr-2.7.0.dev.js" )
+		
+		//-Использование библиотеки jquery
+		script( src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" )
+		//-script( )
+		//-|window.jQuery || document.write("<script src='../js/jquery-1.10.2.min.js'>\x3C/script>")
+		
+		//-Собственные функции
+		script( src="../js/functions.js" )
+		
+		//-Подсветка кода
+		link( rel="stylesheet" href="../css/googlecode.css" )
+		script( src="http://yandex.st/highlightjs/8.0/highlight.min.js" )
+		script
+			|hljs.initHighlightingOnLoad();
+		
+		link( href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css" )
+		title
+			|Главная страница
+	body
+		div.line
+		div.black
+			nav.wrapper
+				ul.nav
+					li
+						a( href="../news" ) Новости
+					li
+						a( href="../art" ) Творчество
+					li
+						a( href="../interests" ) Интересы
+					li
+						a( href="../me" ) Обо мне
+					li
+						a( href="../contacts" ) Контакты
+		div.wrapper
+			header
+				table.header
+					tr
+						td
+							h1
+								a( href="http://ladypython.com" ) LADY
+									span#fu
+										|P
+									|ython.com
+						td.fon( colspan = "2" )
+							h3.version
+								br
+								|&nbsp;&nbsp;3.3.3&nbsp;(3.3.3:c3896275c0f6,&nbsp;Nov&nbsp;18&nbsp;2013,&nbsp;21:19:30)&nbsp;[MSC&nbsp;v.1600&nbsp;64&nbsp;bit&nbsp;(AMD64)]
+								br
+								|&nbsp;&nbsp;Python Type "help", "copyright", "credits" or "license" for more information.
+					tr
+						td
+							h2
+								|Семенова-Звенигородская София
+						td.pr
+							|&nbsp;&nbsp;>>>&nbsp;
+						td.fon
+							p.typer print('Hello, world!')
