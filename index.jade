@@ -1,2 +1,22 @@
-include header
-  include footer
+extend main_page_wrapper.jade
+block title
+	|Главная страница
+block main_information
+	article
+		section
+			h1
+				|&nbsp;&nbsp;&nbsp;День рождения сайта Lady 
+				span.orange P
+				|ython.com!!!
+			p
+				|День рождения!!! 
+				img.smile( src="../images/smiles/smile2.gif" alt="" )
+				|Мы с папой постарались сделать сайт технологически правильным! 
+				img.smile( src="../images/smiles/smile2.gif" alt="" )
+				|Вот средства, которые мы использовали:
+				|для одинакового отображения в разных браузерах применяется 
+				a( href = "http://html5reset.org/" ) HTML5Reset v2,
+				|так же на моем сайте для проверки орфографии используется 
+				a( href = "http://orphus.ru/" ) система Orphus
+				img.smile( src="../images/smiles/smile1.gif" alt="" )
+				|, выделите область с ошибкой и нажмите Ctrl + Enter.
