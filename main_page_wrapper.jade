@@ -31,22 +31,22 @@ html
 		
 		link( href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css" )
 		title
-			|Главная страница
+			block title 
 	body
 		div.line
 		div.black
 			nav.wrapper
 				ul.nav
 					li
-						a( href="../news" ) Новости
+						a( href="index.html" ) Новости
+					//li
+						//a( href="art.html" ) Творчество
 					li
-						a( href="../art" ) Творчество
+						a( href="interests.html" ) Интересы
 					li
-						a( href="../interests" ) Интересы
+						a( href="me.html" ) Обо мне
 					li
-						a( href="../me" ) Обо мне
-					li
-						a( href="../contacts" ) Контакты
+						a( href="contacts.html" ) Контакты
 		div.wrapper
 			header
 				table.header
@@ -71,3 +71,28 @@ html
 							|&nbsp;&nbsp;>>>&nbsp;
 						td.fon
 							p.typer print('Hello, world!')
+			block main_information
+				p
+					|Блок основной информации.
+			div.black
+				script( type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8" )
+				div.yashare-auto-init(data-yashareL10n="ru")&attributes({"data-yashareType":"none"})&attributes({"data-yashareQuickServices":"yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,surfingbird"}) 
+		footer
+			table#footer
+				tbody
+					tr
+						td
+							div#logo5HTML
+								a( href="http://validator.w3.org/check?uri=referer" )
+									img( src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" )
+						td
+							div.sitemap &copy; 2014-2016 Права защищаются. Семенова-Звенигородская София
+							div.sitemap
+								a( href="../sitemap.html" ) карта сайта
+								| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;категория сайта 
+								img( src="../images/ageLimit.gif" alt="" )
+						td
+						td.orphus
+							script( type="text/javascript" src="/orphus/orphus.js" )
+							a( href="http://orphus.ru" id="orphus" target="_blank" )
+								img( alt="Система Orphus" src="/orphus/orphus.gif" width="88" height="31" )
