@@ -1,8 +1,93 @@
 extend main_page_wrapper.jade
 block title
 	|LPython. Обо мне в хронологии.
+block scripts
+	link(rel="stylesheet" href="../css/hronology_style.css")
 block main_information
 	article
-		section
-			h1 &nbsp;&nbsp;&nbsp;Хронология
-				//-div.nachalo
+		section 
+			h1 Хронология
+	section(class="cd-horizontal-timeline")
+		div.timeline
+			div.events-wrapper
+				div.events
+					ol
+						li <a href="#0" data-date="12/11/2015">12.11.15</a>
+						li <a href="#0" data-date="28/11/2015">28.11.15</a>						
+						li <a href="#0" data-date="13/12/2015">13.12.15</a>
+						li <a href="#0" data-date="20/12/2015">20.12.15</a>
+						li <a href="#0" data-date="7/02/2016">7.02.16</a>
+						li <a href="#0" data-date="17/04/2016">17.04.16</a>
+						li <a href="#0" data-date="01/06/2016" class="selected">2001 - ...</a>
+
+					<span class="filling-line" aria-hidden="true"></span>
+
+			ul.cd-timeline-navigation
+				li <a href="#0" class="prev inactive">Пред</a>
+				li <a href="#0" class="next">След</a>
+
+		div.events-content
+			ol
+				li(data-date="12/11/2015")
+					h2 Астрономия, олимпиада
+					em 12 ноября, 2015
+					p
+						| Муниципальный этап всеросийской олимпиады школьников по астрономии. Стала призером.
+					a( href = "../images/hronology/astronomy-2016.jpg" )
+						img.leftimg( src="../images/hronology/astronomy-2016.jpg" width="700" height="500" alt="грамота" )
+				
+				li(data-date="28/11/2015")
+					h2 Математика, Уральский турнир
+					em 28 ноября - 4 декабря, 2015
+					p.
+						Командный турнир по математике.
+
+					a( href = "../images/hronology/urals_winter-2015.jpg" )
+						img.leftimg( src="../images/hronology/urals_winter-2015.jpg" width="500" height="700" alt="грамота" )											
+
+				li(data-date="13/12/2015")
+					h2 Информатика, олимпиада
+					em 13 декабря, 2015
+					p.
+						Муниципальный этап всеросийской олимпиады школьников по информатике и ИКТ. Стала победителем.
+
+					a( href = "../images/hronology/informatic-2016.jpg" )
+						img.leftimg( src="../images/hronology/informatic-2016.jpg" width="700" height="500" alt="грамота" )
+
+				li(data-date="20/12/2015")
+					h2 Математика, олимпиада
+					em 20 декабря, 2015
+					p.
+						Устная командная олимпиада
+
+					a( href = "../images/hronology/mathematica_verbal-2015.jpg" )
+						img.leftimg( src="../images/hronology/mathematica_verbal-2015.jpg" width="700" height="500" alt="грамота" )
+
+				li(data-date="7/02/2016")
+					h2 Информатика, олимпиада
+					em 7 февраля, 2016
+					p.
+						Было очень круто.
+				
+					a( href = "../images/hronology/informatic-2016_II.jpg" )
+						img.leftimg( src="../images/hronology/informatic-2016_II.jpg" width="700" height="500" alt="грамота" )
+
+				li(data-date="17/04/2016")
+					h2 Участие в Технокубке
+					em 17 апреля, 2016
+					p.
+						Было очень круто.
+				
+					a( href = "../images/hronology/tehnocubok-2016.jpg" )
+						img.leftimg( src="../images/hronology/tehnocubok-2016.jpg" width="500" height="700" alt="грамота" )						
+
+				li.selected(data-date="01/06/2016")
+					h2 Знаковые события
+					em 2001 - настоящее время
+					p.
+						Тут можно найти информацию по значащим для меня событиям в моей жизни. Надеюсь, что они будут
+						все время пополняться и добавляться.
+				
+					
+
+	script(src="../js/hronology.js")

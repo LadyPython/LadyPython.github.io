@@ -350,9 +350,12 @@ nav ul {
     list-style: none;
 }
 
-.selected{
-	background: #FF3D00;
+/* изменил Андрей было просто .selected */
+nav li.selected{
+  background: #FF3D00;
 }
+
+
 
 nav ul li {
     display: block;
@@ -377,6 +380,7 @@ nav ul li a:hover {
     width: 396px;
     height: 300px;
 }
+
 
 ol{
 	padding-left: 20px;
