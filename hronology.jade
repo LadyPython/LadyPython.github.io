@@ -12,13 +12,24 @@ block main_information
 			div.events-wrapper
 				div.events
 					ol
-						li <a href="#0" data-date="12/11/2015">12.11.15</a>
-						li <a href="#0" data-date="28/11/2015">28.11.15</a>						
-						li <a href="#0" data-date="13/12/2015">13.12.15</a>
-						li <a href="#0" data-date="20/12/2015">20.12.15</a>
-						li <a href="#0" data-date="7/02/2016">7.02.16</a>
-						li <a href="#0" data-date="17/04/2016">17.04.16</a>
-						li <a href="#0" data-date="01/06/2016" class="selected">2001 - ...</a>
+						//- Астрономия
+						li: a( href="#0" data-date="12/11/2015") 12.11.15
+						//- Уральский, личный
+						//- Уральский, командный
+						li: a( href="#0" data-date="28/11/2015") 28.11.15
+						//- Информатика муниципальный
+						li: a( href="#0" data-date="13/12/2015") 13.12.15
+						//- Математика, устная, командная
+						li: a( href="#0" data-date="20/12/2015") 20.12.15
+						//- Информатика
+						li: a( href="#0" data-date="7/02/2016") 7.02.16
+						//- Уральский турнир, Киров
+						li: a( href="#0" data-date="25/02/2016") 25.02.16
+						//- Московская математическая олимпиада
+						li: a( href="#0" data-date="13/03/2016") 13.03.16												
+						//- Технокубок
+						li: a( href="#0" data-date="17/04/2016") 17.04.16
+						li: a( href="#0" data-date="01/06/2016" class="selected") 2001 - ...
 
 					<span class="filling-line" aria-hidden="true"></span>
 
@@ -43,7 +54,11 @@ block main_information
 						Командный турнир по математике.
 
 					a( href = "../images/hronology/urals_winter-2015.jpg" )
-						img.leftimg( src="../images/hronology/urals_winter-2015.jpg" width="500" height="700" alt="грамота" )											
+						img.leftimg( src="../images/hronology/urals_winter-2015.jpg" width="500" height="700" alt="грамота" )
+
+					a( href = "../images/hronology/urals_winter-2015-II.jpg" )
+						img.leftimg( src="../images/hronology/urals_winter-2015-II.jpg" width="500" height="700" alt="грамота" )
+																	
 
 				li(data-date="13/12/2015")
 					h2 Информатика, олимпиада
@@ -71,6 +86,24 @@ block main_information
 				
 					a( href = "../images/hronology/informatic-2016_II.jpg" )
 						img.leftimg( src="../images/hronology/informatic-2016_II.jpg" width="700" height="500" alt="грамота" )
+
+				li(data-date="25/02/2016")
+					h2 Математика, Уральский турнир
+					em 19-26 февраля, 2016
+					p.
+						Было очень круто.
+				
+					a( href = "../images/hronology/urals_kirov_2016.jpg" )
+						img.leftimg( src="../images/hronology/urals_kirov_2016.jpg" width="500" height="700" alt="грамота" )
+
+				li(data-date="13/03/2016")
+					h2 Математика, Московская олимпиада
+					em 13 марта, 2016
+					p.
+						Было очень круто.
+				
+					a( href = "../images/hronology/mathematica_13.03.2016.jpg" )
+						img.leftimg( src="../images/hronology/mathematica_13.03.2016.jpg" width="700" height="500" alt="грамота" )
 
 				li(data-date="17/04/2016")
 					h2 Участие в Технокубке
